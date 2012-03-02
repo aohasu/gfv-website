@@ -1,0 +1,255 @@
+/* === 変数定義 === */
+/* 色 */
+// ヘッダー・フッターの色
+@line-color: #c0c0c0;
+@head-color: #d0d0d0;
+@info-color: #f0f0f0;
+// ポイントカラー
+@point-color: #a2132f;
+
+/* フォント設定 */
+.quick-font {
+  font-family: 'Quicksand', sans-serif;
+}
+// 初期化系 =======
+h1,h2,h3,h4 {
+  font-weight: normal;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  .quick-font;
+}
+// 全体の設定 =====
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku GothicPro","MS ゴシック","Osaka", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 11pt;
+}
+a:link {
+  color: @point-color;
+  // color: #333366;
+}
+
+a:visited {
+  color: @point-color;
+  // color: #3f3f6f;
+}
+
+a:hover {
+  color: #bbbb66;
+}
+// 位置調整用 =====
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  clear: both;  
+}
+// pagetop
+// サイト右下に表示する最上部へのリンク
+.toplink {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  clear: both;
+  z-index: 1;
+  padding: 10px 40px 10px 40px;
+  border-top: 1px solid @line-color;
+  border-left: 1px solid @line-color;
+}
+// 検索窓
+.search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  .searchArea {
+    background-color: #f0f0f0;
+    width: 300px;
+    height: 30px;
+    border: 1px solid @line-color;
+    .searchBox {
+      width: 250px;
+      height: 20px;
+      background-color: #f0f0f0;
+    }
+  }
+}
+// ================
+// ヘッダー =======
+header {
+  background-color: @head-color;
+  background-image: url("../images/head_back.png");
+  padding-top: 20px;
+  // title
+  h1 {
+    color: @point-color;
+    width: 50%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 30pt;
+    display: block;
+    // text-decoration: none;        
+  }
+// ナビ ===========
+  nav {
+    width: 100%;
+    height: 40px;
+    padding: 10px 0 0 0;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li {
+        padding: 10px 20px 10px 20px;
+        margin: 0 5px 0 5px;
+        float: left;
+        .quick-font;
+        font-size: 18pt;
+
+        -webkit-transition-property: font-size, background-color;
+        -webkit-transition-duration: 0.1s, 0.1s;
+        -webkit-transition-timing-function: linear, linear;
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+
+        a {
+          display: block;
+          text-decoration: none;
+        }
+      }
+      li:hover {
+        font-size: 22pt;
+        background-color: @info-color;
+      }
+      .current {
+        font-size: 22pt;
+        font-style: bold;
+        background-color: @info-color;
+      }
+    }
+  } // nav
+}
+// ================
+
+// へっどらいん ===
+#info {
+  // ---
+  background-image: -ms-linear-gradient(top, #F0F0F0 0%, #D0D0D0 100%);
+  background-image: -moz-linear-gradient(top, #F0F0F0 0%, #D0D0D0 100%);
+  background-image: -o-linear-gradient(top, #F0F0F0 0%, #D0D0D0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F0F0F0), color-stop(1, #D0D0D0));
+  background-image: -webkit-linear-gradient(top, #F0F0F0 0%, #D0D0D0 100%);
+  background-image: linear-gradient(top, #F0F0F0 0%, #D0D0D0 100%);
+  // ---   
+  padding: 20px;
+  h2 {
+    font-size: 18pt;
+    margin: 0;
+  }
+  dl {
+    padding: 0;
+    margin: 0 10px 0 10px;
+    font-size: 12pt;
+    list-style-type: none;
+    dt {
+      float: left;
+      width: 150px;
+      line-height: 30px;
+      font-weight: bold;
+      border-bottom: 1px solid @line-color;
+    }
+    dd {
+      display: block;
+      margin: 0 0 0 150px;
+      // padding-left: 150px;
+      line-height: 30px;
+      border-bottom: 1px solid @line-color;
+    }
+  }
+}
+// ================
+
+// メイン部分 ====
+#content {
+  width: 100%;
+  p {
+    font-size: 11pt;
+    line-height: 150%;
+    margin: 1em;
+  }
+  section {
+    padding: 10px;
+  }
+  article {
+    padding: 10px;
+    -webkit-transition: background-color 0.2s linear;
+  }
+  article:hover {
+    background-color: #fffff0;
+  }
+  aside {
+    padding: 10px;
+  }
+  h3 {
+    padding: 5px 0 5px 20px;
+    margin: 10px 0 10px;
+    font-size: 20pt;
+    width: 90%;
+    border-left: 3px solid @point-color;
+  }
+  
+  #full {
+    padding: 20px 0 20px;
+    width: 100%;
+  }
+  #left {
+    padding: 20px 0 20px;
+    float:left;
+    width:70%; 
+  }
+  #right {
+    padding: 20px 0 20px;
+    float:right;
+    width:30%;
+    h4 {
+      padding: 5px 5px 5px 15px;
+      margin: 10px 0 10px;
+      font-size: 16pt;
+      width: 90%;
+      border-bottom: 1px solid @line-color;
+    }
+  }
+}
+
+footer {
+  clear: both;  
+  float: clear;
+  padding: 20px 10px 30px 10px;
+  border-top: 1px solid @line-color;
+  font-size: 11pt;
+  .copyright {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+  }
+  nav {
+    float: right;
+    text-align: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        display: inline;
+        padding: 0 10px 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/* === 変数定義 === */
+/* 色 */
+// ヘッダー・フッターの色
+@line-color: #c0c0c0;
+@head-color: #d0d0d0;
+@info-color: #f0f0f0;
+// ポイントカラー
+@point-color: #a2132f;
+
+/* フォント設定 */
+.quick-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+// ================
+// member系
+// ================
+.member {
+  padding: 10px;
+  .m_head {
+    height: 80px;
+    .icon {
+      float: left;
+      height: 80px;
+      width: 80px;
+    }
+    h4 {
+      margin: 0 0 0 100px;
+      // padding: 0 0 0 120px;
+      height: 40px;
+      font-size: 20pt;
+    }
+    h5 {
+      font-weight: normal;
+      margin: 0 0 0 100px;
+      // padding: 0 0 0 120px;
+      height: 40px;
+      font-size: 12pt;
+      border-bottom: solid 1px @line-color;
+    }
+  }
+  .m_about {
+    clear: both;
+    //width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-left: solid 1px @line-color;
+    border-bottom: solid 1px @line-color;
+  }
+  .m_etc {
+    clear: both;
+    //width: 100%;
+    padding: 10px;
+    border-left: solid 1px @line-color;
+    border-bottom: solid 1px @line-color;
+  }
+}

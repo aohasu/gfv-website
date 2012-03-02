@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>GFVision</title>
+<link rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
+<script src="script/jquery.min.js"></script>
+<script src="script/jquery.page-scroller-308.js"></script>
+</head>
+<body id="pagetop">
+<header>
+  <div class="wrapper">
+    <h1>GFVision</h1>
+    <nav>
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="product.html">Product</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="info">
+  <div class="wrapper">
+    <dl>
+      <dt><a href="#a1">Index</a></dt>
+      <dd>ようこそ</dd>
+      <dt><a href="#a2">Press releases</a></dt>
+      <dd>更新情報</dd>
+    </dl>
+  </div>
+</div>
+<div id="content">
+  <div class="wrapper">
+    <div id="left">
+      <article id="a1">
+        <h3>Index</h3>
+        <p>
+          GFV！GFV！<br />
+          <br />
+          プログラマ・技術者コミュニティ「GFVision」のWEBサイトです。<br />
+          メンバーやプロジェクト・制作物の紹介、フォーラムなどを設置しています。<br />
+          クリエイティブな精神をお持ちなあなたに。<br />
+        </p>
+      </article>
+      <article id="a2">
+        <h3>Press releases</h3>
+        <dl>
+          <dt>2011/11/xx</dt>
+          <dd>WEBサイト基礎作成</dd>
+        </dl>    
+      </article>
+    </div>
+    <div id="right">
+      <aside>
+        <h4>Twitter</h4>
+          <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script>
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 30000,
+            width: 'auto',
+            height: 400,
+            theme: {
+              shell: {
+                background: '#a21330',
+                color: '#ffffff'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#000000',
+                links: '#a21330'
+              }
+            },
+            features: {
+              scrollbar: true,
+              loop: false,
+              live: true,
+              behavior: 'all'
+            }
+          }).render().setUser('aohasu').start();
+          </script>
+      </aside>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="wrapper">
+    <p class="copyright">Copyright (C) 2011 GFVision All Rights Reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="product.html">Product</a></li>
+
+      </ul>
+    <//nav>
+    <a href="#pagetop" class="toplink">▲ Page Top</a>
+  </div>
+</footer>
+</body>
+</html>

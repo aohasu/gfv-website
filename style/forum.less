@@ -1,0 +1,85 @@
+/* === 変数定義 === */
+/* 色 */
+// ヘッダー・フッターの色
+@line-color: #c0c0c0;
+@head-color: #d0d0d0;
+@info-color: #f0f0f0;
+// ポイントカラー
+@point-color: #a2132f;
+
+/* フォント設定 */
+.quick-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+// ================
+// Fotum  系
+// ================
+.forums {
+  padding: 20px 0 20px 0;
+}
+table {
+  *border-collapse: collapse; /* IE7 and lower */
+  border-spacing: 0;
+  width: 100%;
+}
+
+.forum_table {
+  font-size: 10pt;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  
+  #topic_title {
+    width: 50%;
+  }
+  #user_name {
+    width: 20%;
+  }
+  #count {
+    width: 10%;
+  }
+  #update {
+    width: 20%;
+  }
+  th,td {
+    border-top: 1px solid @line-color;
+    border-left: 1px solid @line-color;
+    padding: 6px;
+    text-align: left;
+  }
+  
+  th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+  }
+  th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+  }
+
+  thead {
+  background-color: @point-color;
+  color: #fff;
+  }
+  tbody {  
+    tr:hover{
+      background: #fbf8e9;
+      -o-transition: all 0.1s ease-in-out;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+.forum_nav {
+  text-align: center;
+}
+
+

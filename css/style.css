@@ -1,0 +1,221 @@
+/* === 変数定義 === */
+/* 色 */
+/* フォント設定 */
+.quick-font {
+  font-family: 'Quicksand', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku GothicPro", "MS ゴシック", "Osaka", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 11pt;
+}
+a:link {
+  color: #a2132f;
+}
+a:visited {
+  color: #a2132f;
+}
+a:hover {
+  color: #bbbb66;
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  clear: both;
+}
+.toplink {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  clear: both;
+  z-index: 1;
+  padding: 10px 40px 10px 40px;
+  border-top: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+}
+.search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.search .searchArea {
+  background-color: #f0f0f0;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #c0c0c0;
+}
+.search .searchArea .searchBox {
+  width: 250px;
+  height: 20px;
+  background-color: #f0f0f0;
+}
+header {
+  background-color: #d0d0d0;
+  background-image: url("../images/head_back.png");
+  padding-top: 20px;
+}
+header h1 {
+  color: #a2132f;
+  width: 50%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  font-size: 30pt;
+  display: block;
+}
+header nav {
+  width: 100%;
+  height: 40px;
+  padding: 10px 0 0 0;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 10px 20px 10px 20px;
+  margin: 0 5px 0 5px;
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18pt;
+  -webkit-transition-property: font-size, background-color;
+  -webkit-transition-duration: 0.1s, 0.1s;
+  -webkit-transition-timing-function: linear, linear;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+header nav ul li:hover {
+  font-size: 22pt;
+  background-color: #f0f0f0;
+}
+header nav ul .current {
+  font-size: 22pt;
+  font-style: bold;
+  background-color: #f0f0f0;
+}
+#info {
+  background-image: -ms-linear-gradient(top, #f0f0f0 0%, #d0d0d0 100%);
+  background-image: -moz-linear-gradient(top, #f0f0f0 0%, #d0d0d0 100%);
+  background-image: -o-linear-gradient(top, #f0f0f0 0%, #d0d0d0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #d0d0d0));
+  background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #d0d0d0 100%);
+  background-image: linear-gradient(top, #f0f0f0 0%, #d0d0d0 100%);
+  padding: 20px;
+}
+#info h2 {
+  font-size: 18pt;
+  margin: 0;
+}
+#info dl {
+  padding: 0;
+  margin: 0 10px 0 10px;
+  font-size: 12pt;
+  list-style-type: none;
+}
+#info dl dt {
+  float: left;
+  width: 150px;
+  line-height: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #c0c0c0;
+}
+#info dl dd {
+  display: block;
+  margin: 0 0 0 150px;
+  line-height: 30px;
+  border-bottom: 1px solid #c0c0c0;
+}
+#content {
+  width: 100%;
+}
+#content p {
+  font-size: 11pt;
+  line-height: 150%;
+  margin: 1em;
+}
+#content section {
+  padding: 10px;
+}
+#content article {
+  padding: 10px;
+  -webkit-transition: background-color 0.2s linear;
+}
+#content article:hover {
+  background-color: #fffff0;
+}
+#content aside {
+  padding: 10px;
+}
+#content h3 {
+  padding: 5px 0 5px 20px;
+  margin: 10px 0 10px;
+  font-size: 20pt;
+  width: 90%;
+  border-left: 3px solid #a2132f;
+}
+#content #full {
+  padding: 20px 0 20px;
+  width: 100%;
+}
+#content #left {
+  padding: 20px 0 20px;
+  float: left;
+  width: 70%;
+}
+#content #right {
+  padding: 20px 0 20px;
+  float: right;
+  width: 30%;
+}
+#content #right h4 {
+  padding: 5px 5px 5px 15px;
+  margin: 10px 0 10px;
+  font-size: 16pt;
+  width: 90%;
+  border-bottom: 1px solid #c0c0c0;
+}
+footer {
+  clear: both;
+  float: clear;
+  padding: 20px 10px 30px 10px;
+  border-top: 1px solid #c0c0c0;
+  font-size: 11pt;
+}
+footer .copyright {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+footer nav {
+  float: right;
+  text-align: right;
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer nav ul li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}

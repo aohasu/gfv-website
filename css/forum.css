@@ -1,0 +1,66 @@
+/* === 変数定義 === */
+/* 色 */
+/* フォント設定 */
+.quick-font {
+  font-family: 'Quicksand', sans-serif;
+}
+.forums {
+  padding: 20px 0 20px 0;
+}
+table {
+  *border-collapse: collapse;
+  /* IE7 and lower */
+
+  border-spacing: 0;
+  width: 100%;
+}
+.forum_table {
+  font-size: 10pt;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+.forum_table #topic_title {
+  width: 50%;
+}
+.forum_table #user_name {
+  width: 20%;
+}
+.forum_table #count {
+  width: 10%;
+}
+.forum_table #update {
+  width: 20%;
+}
+.forum_table th, .forum_table td {
+  border-top: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+  padding: 6px;
+  text-align: left;
+}
+.forum_table th:first-child {
+  -moz-border-radius: 6px 0 0 0;
+  -webkit-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+.forum_table th:last-child {
+  -moz-border-radius: 0 6px 0 0;
+  -webkit-border-radius: 0 6px 0 0;
+  border-radius: 0 6px 0 0;
+}
+.forum_table thead {
+  background-color: #a2132f;
+  color: #fff;
+}
+.forum_table tbody tr:hover {
+  background: #fbf8e9;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.forum_nav {
+  text-align: center;
+}
